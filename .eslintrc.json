@@ -10,7 +10,8 @@
         "error",
         "LabeledStatement",
         "WithStatement"
-      ]
+      ],
+      "no-alert": "off"
     }
   }
   

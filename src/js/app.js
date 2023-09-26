@@ -7,5 +7,3 @@ const character = new Character();
 const game = new Game(board, character);
 
 game.init();
-
-

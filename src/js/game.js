@@ -8,11 +8,10 @@ export default class Game {
 
   init() {
     this.redrawBoard();
-    // this.generate()
     setInterval(() => {
       this.generate();
     }, 1000);
-    this.addEventClick()
+    Game.addEventClick();
   }
 
   redrawBoard() {
@@ -48,33 +47,29 @@ export default class Game {
     }
   }
 
-  addEventClick() {
+  static addEventClick() {
     let count = 0;
     let counter = 0;
     const player = document.querySelector('.player');
-    const goblin = document.querySelector('.goblin')
+    const goblin = document.querySelector('.goblin');
     document.addEventListener('click', (event) => {
       const index = event.target;
       const char = document.querySelector('.char');
-      if(char === index) {
+      if (char === index) {
         char.classList.add('showCursor');
         char.classList.remove('char');
-        count++;
+        count += 1;
       }
-      if(char !== index) {
-        counter++
-        if(counter > 5) {
+      if (char !== index) {
+        counter += 1;
+        if (counter > 5) {
           alert('Вы проиграли');
           count = 0;
           counter = 0;
         }
       }
       player.innerHTML = `<div class="player">Игрок: ${count} </div>`;
-      goblin.innerHTML = `<div class="goblin">Гоблин: ${counter} </div>`; 
-    })
-  }
-
-  clear() {
-
+      goblin.innerHTML = `<div class="goblin">Гоблин: ${counter} </div>`;
+    });
   }
 }

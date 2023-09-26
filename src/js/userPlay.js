@@ -8,6 +8,6 @@
 //         const index = this.cells.indexOf(event.currentTarget);
 //         console.log(index)
 //     })
-    
+
 //     }
 // }

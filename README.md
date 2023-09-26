@@ -1,5 +1,8 @@
 # Домашнее задание к занятию "3.Обработка событий"
 
+[![Build status](https://ci.appveyor.com/api/projects/status/4dcjvsoxta9x9vk2?svg=true)](https://ci.appveyor.com/project/vlknvd/ahj-events)
+
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ нужно использовать менеджер пакетов yarn (а значит, никакого `package-lock.json` в репозитории быть не должно)
