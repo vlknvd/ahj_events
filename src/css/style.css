@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #fff1ec;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+    align-self: center;
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	background-color: rgb(255, 255, 255);
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border: 2px solid #000000;
+}
+
+.char {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/goblin.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.showCursor {
+	width: 100%;
+	height: 100%;
+	cursor: url(/src/img/hammer.png)100 100, pointer;
+}
+
+.counter {
+	font-family: monospace;
+	font-size: 18px;
+	width: 500px;
+	height: 50px;
+	background: #fff;
+	margin: 50px auto 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding-left: 22px;
+}
+
+.player {
+	width: 50%;
+}
+.goblin {
+	width: 50%;
+}
