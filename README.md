@@ -1,7 +1,7 @@
 # Домашнее задание к занятию "3.Обработка событий"
 
 [![Build status](https://ci.appveyor.com/api/projects/status/4dcjvsoxta9x9vk2?svg=true)](https://ci.appveyor.com/project/vlknvd/ahj-events)
-
+[GitHub Pages](https://vlknvd.github.io/ahj_events/)
 
 Правила сдачи задания:
 
